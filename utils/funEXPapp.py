@@ -27,7 +27,7 @@ def model_exp(N, t, params):
 def plotSim(N0, r, μ, tspan = tspan):
     params = np.array([r, μ])
     
-    int_exp = odeint(model_exp, [N0], tspan, args=(params,), hmax=pas_t)
+    int_exp = odeint(model_exp, N0, tspan, args=(params,), hmax=pas_t)
     
     # figure
     fig1, ax1 = plt.subplots(figsize=(8, 6))  
