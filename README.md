@@ -1,3 +1,3 @@
 # SIT_app
 
-A streamlit app for SIT simulation (fête de la science 2022)
+A streamlit app for SIT simulation (fête de la science 2024)
