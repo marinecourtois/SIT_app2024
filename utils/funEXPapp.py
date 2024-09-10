@@ -18,7 +18,8 @@ pas_t = 0.01        # pas de temps de récupération des variables entre t_0 et 
 tspan = np.arange(t_0, t_fin, pas_t)
 
 # modele de croissance exponentielle
-def model_exp(N, t, params):
+def model_exp(etat, t, params):
+    N = etat
     r, μ = params
     Ndot = [(r-μ)*N]
     return Ndot    
