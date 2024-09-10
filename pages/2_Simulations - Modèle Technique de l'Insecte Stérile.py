@@ -5,7 +5,7 @@ from utils.funTISapp import *
 
 st.set_page_config(layout="wide", page_title = "Simulations", page_icon = "📈")
 
-st.sidebar.header("Simulations - Modèle Technique de l'Insecte Stérile")
+st.sidebar.header("Simulations")
 
 col2, col3 = st.columns([5, 15], gap = "large")
 
