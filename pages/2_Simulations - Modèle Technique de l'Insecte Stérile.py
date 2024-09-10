@@ -3,7 +3,7 @@ import streamlit as st
 
 from utils.funTISapp import *
 
-st.set_page_config(layout="wide", page_title = "Simulations - Modèle Technique de l'Insecte Stérile", page_icon = "📈")
+st.set_page_config(layout="wide", page_title = "Simulations", page_icon = "📈")
 
 st.sidebar.header("Simulations - Modèle Technique de l'Insecte Stérile")
 
