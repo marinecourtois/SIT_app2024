@@ -25,7 +25,7 @@ def model_exp(N, t, params):
 
 # fonction pour intégration et plot des dynamiques
 def plotSim(N0, r, μ, tspan = tspan):
-    params = np.append(r, μ)
+    params = np.array([r, μ])
     
     int_exp = odeint(model_exp, N0, tspan, args=(params,), hmax=pas_t)
     
