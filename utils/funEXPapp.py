@@ -21,7 +21,7 @@ tspan = np.arange(t_0, t_fin, pas_t)
 def model_exp(etat, t, params):
     N = etat
     r, μ = params
-    Ndot = [(r-μ)*N]
+    Ndot = [(r-μ)*N[0]]
     return Ndot    
 
 # fonction pour intégration et plot des dynamiques
