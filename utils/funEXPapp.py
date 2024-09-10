@@ -40,7 +40,7 @@ def plotSim(N0, r, μ, tspan = tspan):
     ax1.set_xlabel('temps', fontsize='12')
     ax1.set_ylabel('densité', fontsize='12')
     fig1.suptitle(r'Dynamiques de populations', va='top', fontsize='18')
-    ax1.set_ylim(bottom = -.25, top=K)
+    #ax1.set_ylim(bottom = -.25, top=K)
     ax1.grid()
 
     # returns the figure object
