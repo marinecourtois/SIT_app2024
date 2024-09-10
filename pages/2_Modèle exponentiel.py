@@ -7,8 +7,11 @@ st.set_page_config(layout="wide", page_title = "Simulations", page_icon = "📈"
 
 st.sidebar.header("Simulations")
 
-col3 = st.columns([5, 15], gap = "large")
 
+col2, col3 = st.columns([5, 15], gap = "large")
+
+with col2:
+    st.image("https://forgemia.inra.fr/ludovic.mailleret/figures/-/raw/master/ceratitis_capitata/ceratitis_small.png", width=250)
 with col3:
     st.markdown("$~$")
     st.markdown("# Modèle de croissance exponentielle")
