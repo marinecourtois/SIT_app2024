@@ -25,7 +25,7 @@ with col121:
 
 col22, col23, col24, col25 = st.columns([5, 5, 5, 5], gap = "large")
 with col22:
-    N0 = st.slider(' Densité initiale (N0)', min_value = 0., max_value = 10., value = 1., step=1.)  
+    N0 = st.slider(r' Densité initiale ($N_0$)', min_value = 0., max_value = 10., value = 1., step=1.)  
 
 with col23:
     r = st.slider(' Taux de natalité (r)', min_value = 0., max_value = 1., value = 0.4, step=0.05) 
