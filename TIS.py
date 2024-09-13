@@ -3,6 +3,22 @@ import streamlit as st
 
 from utils.funTISapp import *
 
+from st_pages import Page, show_pages, add_page_title
+
+# Optional -- adds the title and icon to the current page
+add_page_title()
+
+# Specify what pages should be shown in the sidebar, and what their titles 
+# and icons should be
+show_pages(
+    [
+        Page("TIS.py", "Intro"),
+    ]
+)
+
+
+
+
 st.set_page_config(layout="wide", page_title = "Introduction", page_icon ="📚")
 st.sidebar.header("Introduction")
 st.title("intro")
