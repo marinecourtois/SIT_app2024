@@ -18,7 +18,7 @@ with col3:
 col12, col13 = st.columns([11, 10],gap = "large")
 
 with col12:
-    st.markdown("### Modèle à deux sexes et mâles stériles" \n test)
+    st.markdown("### Modèle à deux sexes et mâles stériles")
     st.markdown("Le modèle comporte 2 variables :")
     st.markdown("- la densité de femelles sauvages dans l'environnement $f$,")
     st.markdown("- la densité de mâles sauvages dans l'environnement $m$,")
