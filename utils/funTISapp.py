@@ -57,7 +57,7 @@ def plotSim(etat0, mS, params_sim, tspan = tspan):
 
     # tracé des simulations par rapport au temps
     ax1.plot(tspan, int_SIT[:,0], color='fuchsia', label='femelles', linewidth = 2)
-    ax1.plot(tspan, int_SIT[:,1], color='blue', label='mâles', alpha = .4)
+    ax1.plot(tspan, int_SIT[:,1], color='blue', label='mâles', alpha = .4, linewidth = 2)
 
     # tracé des équilibres positifs
     fRoots, mRoots = getEqs(params)
