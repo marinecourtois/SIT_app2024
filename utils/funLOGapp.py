@@ -17,7 +17,7 @@ t_fin = 30.0        # temps final
 pas_t = 0.01        # pas de temps de récupération des variables entre t_0 et t_fin
 tspan = np.arange(t_0, t_fin, pas_t)
 
-# modele de croissance exponentielle
+# modele de croissance logarithmique
 def model_log(etat, t, params):
     N = etat
     alpha, r, μ = params
@@ -28,7 +28,7 @@ def model_log(etat, t, params):
 def plotSim(N0, alpha, r, μ, tspan = tspan):
     params = np.array([alpha, r, μ])
     
-    int_exp = odeint(model_log, N0, tspan, args=(params,), hmax=pas_t)
+    int_log = odeint(model_log, N0, tspan, args=(params,), hmax=pas_t)
     
     # figure
     fig1, ax1 = plt.subplots(figsize=(8, 6))  
