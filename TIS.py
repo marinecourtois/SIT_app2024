@@ -2,7 +2,6 @@ import numpy as np
 import streamlit as st
 
 from utils.funTISapp import *
-pip install st_pages
 from st_pages import Page, show_pages, add_page_title
 
 # Optional -- adds the title and icon to the current page
