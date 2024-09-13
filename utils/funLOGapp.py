@@ -20,7 +20,7 @@ tspan = np.arange(t_0, t_fin, pas_t)
 # modele de croissance exponentielle
 def model_log(etat, t, params):
     N = etat
-     alpha, r, μ = params
+    alpha, r, μ = params
     Ndot = [r*(1-alpha*N[0])*N[0]-µ*N[0]]
     return Ndot    
 
