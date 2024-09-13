@@ -25,16 +25,16 @@ with col121:
 
 col22, col23, col24, col25 = st.columns([5, 5, 5, 5], gap = "large")
 with col22:
-    N0 = st.slider(' Densité initiale', min_value = 0., max_value = 10., value = 5., step=1.)  
+    N0 = st.slider(' Densité initiale (N0)', min_value = 0., max_value = 10., value = 1., step=1.)  
 
 with col23:
-    r = st.slider(' Taux de natalité', min_value = 0., max_value = 1., value = 0.5, step=0.05) 
+    r = st.slider(' Taux de natalité (r)', min_value = 0., max_value = 1., value = 0.4, step=0.05) 
 
 with col24:
-    μ =  st.slider(' Taux de mortalité', min_value = 0., max_value = 1., value = 0.5, step = 0.05)
+    μ =  st.slider(' Taux de mortalité (μ)', min_value = 0., max_value = 1., value = 0.05, step = 0.05)
 
 with col25:
-    alpha = st.slider(' Taux de compétition', min_value = 0., max_value = 1., value = 0.5, step = 0.05)
+    alpha = st.slider(' Taux de compétition (alpha)', min_value = 0., max_value = 1., value = 0.05, step = 0.05)
 
 ### plots
 
