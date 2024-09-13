@@ -15,7 +15,8 @@ with col3:
     st.markdown("# Bienvenue dans l'application !")
 
 st.markdown("## Introduction")
-st.markdown("Cette application a pour but d'illustrer des situations ou l'on peut chercher à exploiter des points de basculement, plutôt que les éviter. Il s'agit ici de considérer une problématique de contrôle d'insectes ravageurs en agriculture, par la *Technique de l'Insecte Stérile*.")
+
+st.markdown("Cette application a pour but d'introduire des modèles couramment utilisés en dynamiques des populations, et plus particulièrement d'illustrer des situations où l'on peut chercher à exploiter des points de basculement. Il s'agit ici de considérer une problématique de contrôle d'insectes ravageurs en agriculture, par la *Technique de l'Insecte Stérile*.")
 
 st.markdown("La technique de l'insecte stérile est une méthode de contrôle de ravageurs ou vecteurs relevant du biocontrôle.")
 st.markdown("- La technique repose sur l'introduction dans l'environnement d'individus mâles de l'espèce cible, préalablement multipliés et stérilisés dans des biofabriques.") 
