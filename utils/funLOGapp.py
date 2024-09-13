@@ -26,7 +26,7 @@ def model_log(etat, t, params):
 
 # fonction pour intégration et plot des dynamiques
 def plotSim(N0, alpha, r, μ, tspan = tspan):
-    params = np.array([apha, r, μ])
+    params = np.array([alpha, r, μ])
     
     int_exp = odeint(model_log, N0, tspan, args=(params,), hmax=pas_t)
     
