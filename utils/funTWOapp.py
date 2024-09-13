@@ -58,21 +58,6 @@ def plotSim(etat0, params_sim, tspan = tspan):
     # tracé des simulations par rapport au temps
     ax1.plot(tspan, int_SIT[:,0], color='C0', label='femelles', linewidth = 2)
     ax1.plot(tspan, int_SIT[:,1], color='C1', label='mâles', alpha = .4)
-
-    # tracé des équilibres positifs
-    fRoots, mRoots = getEqs(params)
-
-    mycolors = ['C3', 'C2']
-    mylabels = ['éq. instable (femelles)', 'éq. stable (femelles)']
-
-    for i in range(fRoots.size):
-        ax1.plot(tspan, np.ones(tspan.shape)*fRoots[-1-i], color = mycolors[-1-i], label = mylabels[-1-i], linestyle = (0, (3, 3)), linewidth = 2)
-
-    # # tracé de l'équilibre nul
-    if mS != 0:
-        ax1.plot(tspan, np.ones(tspan.shape)*0, linestyle = (0, (3, 3)), linewidth = 2, color = mycolors[1])
-    else:
-        ax1.plot(tspan, np.ones(tspan.shape)*0, linestyle = (0, (3, 3)), linewidth = 2, color = mycolors[0])
     
     ax1.legend(fontsize='10', loc = 'upper right')
     ax1.set_xlabel('temps', fontsize='12')
