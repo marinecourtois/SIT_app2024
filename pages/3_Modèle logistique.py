@@ -45,5 +45,5 @@ with col32:
 
 with col33:
     if plotChoice == "Dynamiques":
-        fig_sim = plotSim(N0 = np.array([N0]), r = r, μ = μ, alpha = alpha)
+        fig_sim = plotSim(N0 = np.array([N0]), alpha = alpha, r = r, μ = μ)
         st.pyplot(fig_sim)
