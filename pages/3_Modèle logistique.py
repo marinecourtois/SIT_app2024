@@ -34,7 +34,7 @@ with col24:
     μ =  st.slider(' Taux de mortalité (μ)', min_value = 0., max_value = 1., value = 0.05, step = 0.05)
 
 with col25:
-    alpha = st.slider(' Taux de compétition (alpha)', min_value = 0., max_value = 1., value = 0.05, step = 0.05)
+    alpha = st.slider(' Taux de compétition ($\alpha$)', min_value = 0., max_value = 1., value = 0.05, step = 0.05)
 
 ### plots
 
