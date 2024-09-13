@@ -48,7 +48,7 @@ def model_SITinv(etat, t, params):
 # fonction pour intégration et plot des dynamiques
 #@st.experimental_singleton
 def plotSim(etat0, params_sim, tspan = tspan):
-    params = np.append(params_sim)
+    params = params_sim
     
     int_SIT = odeint(model_SIT, etat0, tspan, args=(params,), hmax=pas_t)
     
