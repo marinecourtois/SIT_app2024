@@ -37,18 +37,14 @@ etat0 = np.array([f0, m0])
 col32, col33 = st.columns([10, 15],gap = "large")
 with col32:
     plotChoice = st.selectbox("Que voulez vous tracer ?",
-                ("Dynamiques", "Synthèse des dynamiques", "Plan de phase", "Bifurcations / mâles stériles"), index=0)
+                ("Dynamiques"), index=0)
 
 with col33:
     if plotChoice == "Dynamiques":
         fig_sim = plotSim(etat0 = etat0, params_sim = params_sim)
         st.pyplot(fig_sim)
-    elif plotChoice == "Synthèse des dynamiques":
-        fig_all = plotSimAll(params_sim = params_sim)
-        st.pyplot(fig_all)
-    elif plotChoice == "Plan de phase":
-        fig_plane = plotPlane(params_sim = params_sim)
-        st.pyplot(fig_plane)
-    elif plotChoice == "Bifurcations / mâles stériles":
-        fig_bif = plotBif(params_sim = params_sim)
-        st.pyplot(fig_bif)
+
+
+
+
+
