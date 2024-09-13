@@ -28,7 +28,7 @@ with col22:
     N0 = st.slider(' Densité initiale', min_value = 0, max_value = 100, value = 10, step=1)  
 
 with col23:
-    r = st.slider(' Taux de natalité', min_value = None, max_value = 2, value = None, step=0.1) 
+    r = st.slider(' Taux de natalité', min_value = 0, max_value = 2, value = None, step=None) 
 
 with col24:
     μ =  st.slider(' Taux de mortalité', min_value = None, max_value = None, value = None, step = None)
