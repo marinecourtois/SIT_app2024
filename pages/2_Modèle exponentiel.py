@@ -31,7 +31,7 @@ with col23:
     r = st.slider(' Taux de natalité', min_value = 0, max_value = 2, value = 1, step=None) 
 
 with col24:
-    μ =  st.slider(' Taux de mortalité', min_value = 0, max_value = 2, value = 1, step = None)
+    μ =  st.slider(' Taux de mortalité', min_value = None, max_value = None, value = None, step = None)
 
 ### plots
 
