@@ -22,15 +22,12 @@ with col121:
     st.markdown("### Calculs et simulations")
     st.markdown("Saisissez les paramètres")
 
-col22, col23, col24 = st.columns([7, 7, 7], gap = "large")
+col22, col23 = st.columns([10, 10], gap = "large")
 with col22:
     f0 = st.slider(' Densité de femelles sauvages initiale', min_value = 0.1, max_value = K, value = 3., step=0.1, disabled = False)  
 
 with col23:
     m0 = st.slider(' Densité de mâles sauvages initiale', min_value = 0.1, max_value = K, value = K/2, step=0.1) 
-
-with col24:
-    mS =  st.slider(' Densité de mâles stériles', min_value = .1, max_value = 1.75, value = 1., step = 0.05)  
 
 # intial condition
 etat0 = np.array([f0, m0])
@@ -44,13 +41,13 @@ with col32:
 
 with col33:
     if plotChoice == "Dynamiques":
-        fig_sim = plotSim(etat0 = etat0, mS = mS, params_sim = params_sim)
+        fig_sim = plotSim(etat0 = etat0, params_sim = params_sim)
         st.pyplot(fig_sim)
     elif plotChoice == "Synthèse des dynamiques":
-        fig_all = plotSimAll(mS = mS, params_sim = params_sim)
+        fig_all = plotSimAll(params_sim = params_sim)
         st.pyplot(fig_all)
     elif plotChoice == "Plan de phase":
-        fig_plane = plotPlane(mS = mS, params_sim = params_sim)
+        fig_plane = plotPlane(params_sim = params_sim)
         st.pyplot(fig_plane)
     elif plotChoice == "Bifurcations / mâles stériles":
         fig_bif = plotBif(params_sim = params_sim)
