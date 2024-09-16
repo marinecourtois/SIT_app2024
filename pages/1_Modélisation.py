@@ -19,7 +19,7 @@ col12, col13 = st.columns([11, 10],gap = "large")
 
 with col12:
     st.markdown("#### Modèle de croissance exponentielle")
-    st.markdown("Description des naissances et morts des différents individus. On étudie le nombre d'individus")
+    st.markdown(r"Description des naissances et morts des différents individus. On étudie le nombre d'individus, notée $N(t)$ d'une population donnée au cours du temps, représenté par la variable $t$. En notant $r$ le taux de natalité et $\mu$ le taux de mortalité, ce modèle s'écrit :")
     st.markdown("On étudie le nombre d'individus")
     st.markdown("- la densité de mâles sauvages dans l'environnement $m$,")
     st.markdown("- la densité de mâles stériles $m_s$ est considérée constante.")
