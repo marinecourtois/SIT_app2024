@@ -29,10 +29,10 @@ with col12:
 with col13:
     st.markdown("#### Modèle à deux sexes")
     st.markdown(r"Afin de complexifier le modèle, on peut distinguer mâles et femelles au sein de la population. On notera ainsi $N(t) = F(t) + M(t)$, où $F$ désigne le nombre de femelles et $M$ le nombre de mâles. En s'inspirant du modèle précédent, on obtient les équations suivantes :")
-    st.markdown(r"$$\left\{\begin{array}{l}\displaystyle \frac{d F}{dt} = r\, (1-p\,) c(F) F - \mu F,\\[.5cm]\displaystyle \frac{d M}{dt} = r\, p\,  \frac{M}{M+M_S}  c(F) F - \mu M.\end{array}\right.$$")
+    st.markdown(r"$$\left\{\begin{array}{l}\displaystyle \frac{d F}{dt} = r\, (1-p\,) c(F) F - \mu F,\\[.5cm]\displaystyle \frac{d M}{dt} = r\, p\, c(F) F - \mu M.\end{array}\right.$$")
     st.markdown(r"où $p$ représente le sexe-ratio, autrement dit la proportion de mâles dans la population. Nous nous basons ici sur l'exemple d'une population de mouches à fruits en compétition pour les sites de pontes. Le nombre de mâles étant généralement suffisant pour assurer la reproduction, on considère que leur croissance n'est limitée que par le nombre de femelles.")
     st.markdown("#### Modèle Technique de l'Insecte Stérile")
     st.markdown(r"En ajoutant l'influence des mâles stériles (notés $M_S$) introduits dans le modèle précédent, on obtient le modèle suivant")
-    st.markdown(r"$$\left\{\begin{array}{l}\displaystyle \frac{d F}{dt} = r\, (1-p\,) \frac{M}{M+M_S} c(F) F - \mu F,\\[.5cm]\displaystyle \dot m = r p f \frac{m}{m+m_s}  c(f) - \mu m.\end{array}\right.$$")
+    st.markdown(r"$$\left\{\begin{array}{l}\displaystyle \frac{d F}{dt} = r\, (1-p\,) \frac{M}{M+M_S} c(F) F - \mu F,\\[.5cm]\displaystyle \frac{d M}{dt} = r\, p\,  \frac{M}{M+M_S}  c(F) F - \mu M.\end{array}\right.$$")
     st.markdown(r"où $F$ et $M$ représentent les densités des individus femelles et mâles (sauvages); $M_S$ représente la densité de mâles stériles, supposée constante par simplicité. $r$ est le nombre moyen de descendants par femelle accouplée, $p$ la proportion de mâles dans la descendance et $\mu$ le taux de mortalité de l'espèce. $c(F)$ est une fonction qui vaut 1 lorsque $F=0$ et est décroissante de $F$; elle représente la compétition entre les femelles pour accéder aux sites de pontes.")
     
