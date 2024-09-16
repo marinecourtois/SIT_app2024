@@ -24,10 +24,10 @@ with col121:
 
 col22, col23 = st.columns([10, 10], gap = "large")
 with col22:
-    f0 = st.slider(' Densité de femelles sauvages initiale', min_value = 0.1, max_value = K, value = 3., step=0.1, disabled = False)  
+    f0 = st.slider(r' Densité de femelles sauvages initiale ($F_0$)', min_value = 0.1, max_value = K, value = 3., step=0.1, disabled = False)  
 
 with col23:
-    m0 = st.slider(' Densité de mâles sauvages initiale', min_value = 0.1, max_value = K, value = K/2, step=0.1) 
+    m0 = st.slider(r' Densité de mâles sauvages initiale ($M_0$)', min_value = 0.1, max_value = K, value = K/2, step=0.1) 
 
 # intial condition
 etat0 = np.array([f0, m0])
