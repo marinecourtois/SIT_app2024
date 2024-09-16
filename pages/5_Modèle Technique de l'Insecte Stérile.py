@@ -30,7 +30,7 @@ with col23:
     m0 = st.slider(r' Densité de mâles sauvages initiale ($M_0$)', min_value = 0.1, max_value = K, value = K/2, step=0.1) 
 
 with col24:
-    mS =  st.slider(r' Densité de mâles stériles ($M_S$)', min_value = 1., max_value = 20., value = 5., step = 0.1)  
+    mS =  st.slider(r' Densité de mâles stériles ($M_S$)', min_value = 0.1, max_value = 1.75, value = 0.3, step = 0.05)  
 
 # intial condition
 etat0 = np.array([f0, m0])
