@@ -14,7 +14,7 @@ with col2:
     st.image("https://forgemia.inra.fr/ludovic.mailleret/figures/-/raw/master/ceratitis_capitata/ceratitis_small.png", width=250)
 with col3:
     st.markdown("$~$")
-    st.markdown("# Modèle de croissance exponentielle")
+    st.markdown("# Modèle de croissance limitée par la compétition")
 
 
 col121, col131 = st.columns([11, 10], gap = "large")
