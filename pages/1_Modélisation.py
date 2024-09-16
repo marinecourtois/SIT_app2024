@@ -20,11 +20,7 @@ col12, col13 = st.columns([11, 10],gap = "large")
 with col12:
     st.markdown("#### Modèle de croissance exponentielle")
     st.markdown(r"Description des naissances et morts des différents individus. On étudie le nombre d'individus, notée $N(t)$ d'une population donnée au cours du temps, représenté par la variable $t$. En notant $r$ le taux de natalité et $\mu$ le taux de mortalité, ce modèle s'écrit :")
-    st.markdown("On étudie le nombre d'individus")
-    st.markdown("- la densité de mâles sauvages dans l'environnement $m$,")
-    st.markdown("- la densité de mâles stériles $m_s$ est considérée constante.")
-    st.markdown("##### Le modèle s'écrit :")
-    st.markdown(r"$$\left\{\begin{array}{l}\displaystyle \dot f = r (1-p) f \frac{m}{m+m_s} c(f) - \mu f,\\[.3cm]\displaystyle \dot m = r p f \frac{m}{m+m_s}  c(f) - \mu m.\end{array}\right.$$")
+    st.markdown(r"$$\left\{\begin{array}{l}\displaystyle \frac{dN}{dt} = rN - \mu N.\end{array}\right.$$")
     st.markdown(r"- $r$ représente le nombre d'œufs pondus par femelle,")
     st.markdown(r"- $p$ la proportion de mâles dans la descendance,")
     st.markdown(r"- $c(f)$ la compétition entre les femelles pour l'accès aux sites de pontes,")
@@ -32,6 +28,7 @@ with col12:
 
 with col13:
     st.markdown("#")
+    st.markdown(r"$$\left\{\begin{array}{l}\displaystyle \dot f = r (1-p) f \frac{m}{m+m_s} c(f) - \mu f,\\[.3cm]\displaystyle \dot m = r p f \frac{m}{m+m_s}  c(f) - \mu m.\end{array}\right.$$")
     st.markdown("##### Reproduction et influence des mâles stériles")
     st.markdown("- les accouplements sont considérés non limitants et au hasard")
     st.markdown(r"- en l'absence de mâles stériles ($m_s = 0$), les femelles sauvages pondent des oeufs à un taux $r$, pondéré par la compétition entre femelles. La vitesse de reproduction est donc : $r f\,c(f)$")
