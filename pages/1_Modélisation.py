@@ -21,10 +21,10 @@ with col12:
     st.markdown("#### Modèle de croissance exponentielle")
     st.markdown(r"Description des naissances et morts des différents individus. On étudie le nombre d'individus, notée $N(t)$ d'une population donnée au cours du temps, représenté par la variable $t$. En notant $r$ le taux de natalité et $\mu$ le taux de mortalité, ce modèle s'écrit :")
     st.markdown(r"$$\left\{\begin{array}{l}\displaystyle \frac{dN}{dt} = rN - \mu N.\end{array}\right.$$")
-    st.markdown(r"- $r$ représente le nombre d'œufs pondus par femelle,")
-    st.markdown(r"- $p$ la proportion de mâles dans la descendance,")
-    st.markdown(r"- $c(f)$ la compétition entre les femelles pour l'accès aux sites de pontes,")
-    st.markdown(r"- $\mu$ le taux de mortalité de la population.")
+    st.markdown("#### Modèle de croissance limitée par la compétition")
+    st.markdown("Afin de pallier les limites du modèle exponentiel, on considère un nouveau modèle prenant en compte la compétition entre les individus et empêchant la population de croître indéfiniment. Ce modèle peut s'écrire :")
+    st.markdown(r"$$\left\{\begin{array}{l}\displaystyle \frac{dN}{dt} = rc(N)N -\mu N,\end{array}\right.$$")
+    st.markdown(r"où $c(N)$ est une fonction décroissante, qui vaut $1$ lorsque $N=0$, et qui représente la compétition entre les individus (par exemple pour la reproduction). Dans le cas le plus simple, on choitit $c(N) = 1 - \alpha N$. On parle alors de modèle logistique, et $\alpha$ désigne l'intensité de la compétition entre les individus. ")
 
 with col13:
     st.markdown("#")
