@@ -18,9 +18,9 @@ with col3:
 col12, col13 = st.columns([11, 10],gap = "large")
 
 with col12:
-    st.markdown("### Modèle à deux sexes et mâles stériles")
-    st.markdown("Le modèle comporte 2 variables :")
-    st.markdown("- la densité de femelles sauvages dans l'environnement $f$,")
+    st.markdown("#### Modèle de croissance exponentielle")
+    st.markdown("Description des naissances et morts des différents individus.")
+    st.markdown("On étudie le nombre d'individus, noté r"$N(t)$" d'une population donnée au cours du temps, représenté par la variable t.)
     st.markdown("- la densité de mâles sauvages dans l'environnement $m$,")
     st.markdown("- la densité de mâles stériles $m_s$ est considérée constante.")
     st.markdown("##### Le modèle s'écrit :")
